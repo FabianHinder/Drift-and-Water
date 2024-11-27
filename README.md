@@ -2,8 +2,8 @@
 
 Experimental code of papers 
 
-* [[1]](#paper_loc_of_small) [_"Localization of Small Leakages in Water Distribution Networks using Concept Drift Explanation Methods"_](https://arxiv.org/abs/2310.15830) 
-* [[2]](#paper_suitability) _"Investigating the Suitability of Concept Drift Detection for Detecting Leakages in Water Distribution Networks"_
+* [[1]](#paper_loc_of_small) [_"Localizing of Anomalies in Critical Infrastructure using Model-Based Drift Explanations"_](https://ieeexplore.ieee.org/iel8/10649807/10649898/10651472.pdf?casa_token=Qho8wSvDDpsAAAAA:lHHUqZ7Tp7BqGKgj155GbCT4GNCPazjbrlfOEp4pMxv_kTkqeb82eNy2vUVrRXGF3MCN3U_bMjDM) [(ArXiv version)](https://arxiv.org/abs/2310.15830) 
+* [[2]](#paper_suitability) [_"Investigating the Suitability of Concept Drift Detection for Detecting Leakages in Water Distribution Networks"_](https://www.scitepress.org/Link.aspx?doi=10.5220/0012361200003654) [(ArXiv version)](https://arxiv.org/abs/2401.01733) 
 
 by V. Vaquet et al.
 
@@ -16,7 +16,7 @@ In contrast, our works [[1](#paper_loc_of_small),[2](#paper_suitability)] we att
 we explore the potential of both model-loss-based and distribution-based drift detection to tackle leakages detection. We additionally discuss the issue of temporal dependencies in the data and propose a way to cope with it when applying distribution-based detection. We evaluate different methods systematically for leakages of different sizes and detection times.
 Furthermore, for leakage localization, we first model leakages in the water distribution network employing Bayesian networks, and the system dynamics are analyzed. We then show how the problem is connected to and can be considered through the lens of concept drift. In particular, we argue that model-based explanations of concept drift are a promising tool for localizing leakages given limited information about the network. The methodology is experimentally evaluated using realistic benchmark scenarios.
 
-**Keywords:** Water Distribution Networks , Anomaly Detection, Virtual Sensors , Leakage Localization , Automated Data-Analysis , Concept Drift , Explainable AI , Model Based Drift Explanations.
+**Keywords:** Water Distribution Networks, Anomaly Detection, Virtual Sensors, Leakage Localization, Automated Data-Analysis, Concept Drift, Explainable AI, Model-Based Drift Explanations.
 
 ## Requirements
 
@@ -36,21 +36,32 @@ To run the code, there are two stages 1. preparing the experiments (`train_model
 
 Cite our papers:
 
-<a name="paper_loc_of_small">[1]</a> V. Vaquet, F. Hinder, K. Lammers, J. Vaquet, and B. Hammer [_"Localization of Small Leakages in Water Distribution Networks using Concept Drift Explanation Methods"_](https://arxiv.org/abs/2310.15830)
+<a name="paper_loc_of_small">[1]</a> V. Vaquet, F. Hinder, K. Lammers, J. Vaquet, and B. Hammer [_"Localizing of Anomalies in Critical Infrastructure using Model-Based Drift Explanations"_](https://ieeexplore.ieee.org/iel8/10649807/10649898/10651472.pdf?casa_token=Qho8wSvDDpsAAAAA:lHHUqZ7Tp7BqGKgj155GbCT4GNCPazjbrlfOEp4pMxv_kTkqeb82eNy2vUVrRXGF3MCN3U_bMjDM) [(ArXiv version)](https://arxiv.org/abs/2310.15830) 
 ```
-@misc{vaquet2023localization,
-      title={Localization of Small Leakages in Water Distribution Networks using Concept Drift Explanation Methods}, 
-      author={Valerie Vaquet and Fabian Hinder and Kathrin Lammers and Jonas Vaquet and Barbara Hammer},
-      year={2023},
-      eprint={2310.15830},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@inproceedings{vaquet2024localizing,
+  title={Localizing of Anomalies in Critical Infrastructure using Model-Based Drift Explanations},
+  author={Vaquet, Valerie and Hinder, Fabian and Vaquet, Jonas and Lammers, Kathrin and Quakernack, Lars and Hammer, Barbara},
+  booktitle={2024 International Joint Conference on Neural Networks (IJCNN)},
+  pages={1--8},
+  year={2024},
+  organization={IEEE}
 }
 ```
 
-<a name="paper_suitability">[2]</a> V. Vaquet, F. Hinder, and B. Hammer [_"Investigating the Suitability of Concept Drift Detection for Detecting Leakages in Water Distribution Networks"_](#)
+<a name="paper_suitability">[2]</a> V. Vaquet, F. Hinder, and B. Hammer [_"Investigating the Suitability of Concept Drift Detection for Detecting Leakages in Water Distribution Networks"_](https://www.scitepress.org/Link.aspx?doi=10.5220/0012361200003654) [(ArXiv version)](https://arxiv.org/abs/2401.01733) 
 ```
-Under review
+@conference{icpram24,
+author={Valerie Vaquet. and Fabian Hinder. and Barbara Hammer.},
+title={Investigating the Suitability of Concept Drift Detection for Detecting Leakages in Water Distribution Networks},
+booktitle={Proceedings of the 13th International Conference on Pattern Recognition Applications and Methods - ICPRAM},
+year={2024},
+pages={296-303},
+publisher={SciTePress},
+organization={INSTICC},
+doi={10.5220/0012361200003654},
+isbn={978-989-758-684-2},
+issn={2184-4313},
+}
 ```
 
 ## License
